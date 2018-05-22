@@ -1,0 +1,21 @@
+<h1>
+    Random Play:
+</h1>
+
+<div>
+    Preguntas correctas = <span id="score"><%= score %></span>
+</div>
+
+<p>
+    La respuesta <strong> <%= answer %> </strong> esta <%= result ? 'bien' : 'mal' %>.
+</p>
+
+<p>
+    <% if (!result) { %>
+    Has perdido.
+    <a href="/quizzes"> Fin del juego </a>
+    <% } else { %>
+    Has ganado. Bravo!
+    <a href="/quizzes/randomplay"><button>Sigue jugando</button></a>
+    <% } %>
+</p>
