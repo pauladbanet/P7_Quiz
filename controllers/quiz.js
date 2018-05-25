@@ -204,7 +204,7 @@ exports.randomcheck = (req, res, next) => {
     } else {
         req.session.randomPlay = [];
     }
-    res.render('quizzes/random_resultado', {
+    res.render('quizzes/random_result', {
         result,
         answer,
         score
